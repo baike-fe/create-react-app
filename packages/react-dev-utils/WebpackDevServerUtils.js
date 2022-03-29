@@ -98,6 +98,15 @@ function printInstructions(appName, urls, useYarn) {
       `${chalk.cyan(`${useYarn ? 'yarn' : 'npm run'} build`)}.`
   );
   console.log();
+
+  console.log(chalk.red('VERY IMPORTANT:'));
+  console.log(
+    'Create a app.config.js file at the root of your project'
+  );
+  console.log(
+    'You can find these values in README.improve.md.'
+  );
+  console.log();
 }
 
 function createCompiler({
